@@ -227,6 +227,16 @@
 
 /* Taplets and large smart phones */
 @media (max-width: 991px) {
+  .hero .illustration{
+       flex: 1;
+    transform: scale(0.6);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+  }
+  .hero .contents{
+    text-align: center;
+  }
   .navbar {
     width: 100vw; }
 
@@ -309,9 +319,7 @@
     width: 100%;
     background-color: red; }
 
-@media (max-width: 480px) {
-  body {
-    display: none; } }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -329,4 +337,3 @@ body {
   margin: auto;
   max-width: 100%; }
 
-/*# sourceMappingURL=style.css.map */
