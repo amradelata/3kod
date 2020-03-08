@@ -1,0 +1,120 @@
+// /* Extra large screens
+@media (min-width: 1201px)
+
+// Large screens
+@media (min-width: 992px) and (max-width: 1200px)
+
+
+/* Taplets and large smart phones */
+@media (max-width: 991px)
+	.navbar
+		width: 100vw
+	.navbar .links
+		display: none
+	.navbar .menu
+		display: block
+		width: 10%
+	.links-phone
+		display: none //block
+		position: absolute
+		top: 6%
+		left: -52px
+		right: 0
+		bottom: 1000px
+		z-index: 5	
+		text-align: center
+		background-color: #efefef
+		li
+			text-align: center
+			font-size: 35px
+			padding: 50px 0 
+			list-style: none
+			a
+				text-decoration: none
+			.register
+				color: #1739E6
+				font-weight: bold
+			.prices
+				color: #000
+	.links-phone .open
+		display: block
+
+	.steps h1
+		font-size: 80px
+		margin-bottom: 100px
+	.cards
+		display: none
+
+	.cards-phone
+		display: block
+
+	.cards-phone .card
+		flex-basis: calc(100% - 20px)
+		margin: -40px
+		height: 650px
+		display: block
+		margin-bottom: 200px
+
+
+	.cards-phone .card .numbers
+		width: 10%
+		top: -5%
+		left: -5px
+		position: absolute
+	.cards-phone .card p
+		top: -8%
+		left: 3%
+		font-size: 40px	
+		position: absolute
+		z-index: 1
+		color: #fff		
+
+	.cards-phone .card h3
+		font-size: 50px
+		margin-bottom: 0
+
+	// .btn.gradien
+	// 	transform: scale(2)
+
+
+
+
+
+.footer
+	text-align: center
+	font-size: 35px	
+	.links
+		li
+			a
+				font-size: 30px
+
+
+
+
+
+	
+
+
+
+.footer .content .flex-parent
+	display: unset
+
+	// Register page responsive
+	.register-page .btn
+		width: 100%
+		background-color: red
+						
+		
+
+
+
+
+
+// Smart phones and some small taplets
+@media (max-width: 767px)
+
+// Super extra small
+@media (max-width: 480px)
+	body
+		display: none
+
