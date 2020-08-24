@@ -225,8 +225,46 @@
 .links-phone {
   display: none; }
 
+
+
+
+
+  .footer {
+  text-align: center;
+  font-size: 35px; }
+  .footer .links li a {
+    font-size: 30px; }
+
+.footer .content .flex-parent {
+  display: unset; }
+  .footer .content .flex-parent .register-page .btn {
+    width: 100%;
+    background-color: red; }
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  background-color: #F8F8F8; }
+
+.container {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%; }
+
+
+
+  
+
 /* Taplets and large smart phones */
-@media (max-width: 991px) {
+/* @media (min-width: 991px) {
   .hero .illustration{
        flex: 1;
     transform: scale(0.6);
@@ -235,7 +273,8 @@
     top: 0;
   }
   .hero .contents{
-    text-align: center;
+        text-align: center;
+        transform: scale(0.6);
   }
   .navbar {
     width: 100vw; }
@@ -306,34 +345,83 @@
 
   .cards-phone .card h3 {
     font-size: 50px;
-    margin-bottom: 0; } }
-.footer {
+    margin-bottom: 0; } } */
+
+
+
+
+    
+   /* popup*/
+    .mypopup {
+  display: none;
   text-align: center;
-  font-size: 35px; }
-  .footer .links li a {
-    font-size: 30px; }
+  background: #fff;
+  position: fixed;
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.mypopup img {
+  width: 350px;
+}
+.mypopup button {
+  /* display: block; */
+  margin: 20px auto;
+  border: none;
+  padding: 10px;
+  background: #2f3640;
+  color: aliceblue;
+}
+.mypopup button a {
+  color: aliceblue;
+}
+    /* popup*/
 
-.footer .content .flex-parent {
-  display: unset; }
-  .footer .content .flex-parent .register-page .btn {
+@media screen and  (max-width: 760px)  {
+
+    /* popup*/
+  .mypopup img{
+    width: 200px;
+  }
+    .mypopup {
     width: 100%;
-    background-color: red; }
+  }
+  .mypopup button {
+    font-size: 15px !important;
+  }
+  /* popup*/
+  .navbar{
+    display: none;
+  }
+  .hero .illustration{
+    flex: 1;
+    transform: scale(0.9);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+  }
+  .hero .contents{
+    display: block;
+    margin-top: 50vh;
+        text-align: center;
+        transform: scale(0.6);
+  }
+  .steps {
+    margin-top: 100px;
+  }
 
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Cairo", sans-serif;
-  direction: rtl;
-  background-color: #F8F8F8; }
-
-.container {
-  width: 1200px;
-  margin: auto;
-  max-width: 100%; }
-
+  .btn.white,
+  .btn.gradien{
+    width: 90%;
+    margin: 70px auto;
+  }
+  .card img{
+    padding: 14px 0;
+  }
+  .card {
+    flex-basis: calc(100% - 20px);
+  }
+}
